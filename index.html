@@ -1,0 +1,85 @@
+<!-- ✅ DOM X - Interface mobile avec navigation inférieure -->
+<style>
+  body {
+    background: #000;
+    font-family: 'Segoe UI', sans-serif;
+    color: #fff;
+    margin: 0;
+    padding-bottom: 60px; /* Space for bottom nav */
+  }
+  .bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #111;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    border-top: 1px solid #222;
+    box-shadow: 0 -2px 10px rgba(255, 0, 0, 0.2);
+    z-index: 1000;
+  }
+  .bottom-nav a {
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    font-size: 0.9em;
+  }
+  .bottom-nav a.active {
+    color: gold;
+  }
+  .bottom-nav i {
+    display: block;
+    font-size: 1.5em;
+    margin-bottom: 4px;
+  }
+</style>
+
+<div class="bottom-nav">
+  <a href="#chat" class="active"><i>💬</i>Chat</a>
+  <a href="#gallery"><i>🖼️</i>Galerie</a>
+  <a href="#profile"><i>👤</i>Profil</a>
+</div>
+
+<h2>🗣️ Témoignages fictifs – DOM X</h2>
+<blockquote>❝Je pensais connaître mes désirs… jusqu’à ce que DOM X les révèle...❞<br><strong>– Amandine</strong></blockquote>
+
+<div class="chat-interface" id="chat">
+  <div class="chat-header">
+    <h2>💬 Conversation avec @DominaCeleste</h2>
+    <span class="status online">● en ligne</span>
+  </div>
+  <div class="chat-messages">
+    <div class="message received">Bonsoir... Es-tu prêt à obéir ?</div>
+    <div class="message sent">Je n'attends que ton ordre.</div>
+    <div class="message received">Alors commençons par un pacte silencieux 🕯️</div>
+    <div class="message system">@DominaCeleste vous a envoyé un cadeau mystère 🎁</div>
+  </div>
+  <div class="chat-input">
+    <input type="text" placeholder="Écrivez votre message…">
+    <div class="icons">
+      <span>🎤</span>
+      <span>📎</span>
+      <span>🎁</span>
+      <span>🕯️</span>
+      <span>😊</span>
+    </div>
+  </div>
+</div>
+
+<h2 id="gallery">🖼️ Galerie DOM X Premium</h2>
+<div class="gallery">
+  <div class="gallery-item">✨ Photo exclusive #1</div>
+  <div class="gallery-item">🔥 Accessoire fétiche</div>
+  <div class="gallery-item">🎭 Masque mystérieux</div>
+  <div class="gallery-item premium">💎 Contenu réservé aux membres Gold</div>
+</div>
+
+<h2 id="profile">👤 Profil utilisateur DOM X</h2>
+<div class="profile">
+  <h3>@DarkVelvet</h3>
+  <p>Rôle : Dominante</p>
+  <p>Centres d’intérêt : Rituels, esthétique gothique, jeux psychologiques</p>
+  <p>Localisation : Paris, France</p>
+</div>
